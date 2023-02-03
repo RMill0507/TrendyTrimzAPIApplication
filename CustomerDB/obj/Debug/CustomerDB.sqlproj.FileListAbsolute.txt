@@ -1,0 +1,6 @@
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\bin\Debug\CustomerDB.dacpac
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\bin\Debug\CustomerDB.dll
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\bin\Debug\CustomerDB.pdb
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\obj\Debug\CustomerDB.sqlproj.AssemblyReference.cache
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\obj\Debug\CustomerDB.dll
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\obj\Debug\CustomerDB.pdb
