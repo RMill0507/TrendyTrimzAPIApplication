@@ -8,6 +8,7 @@
         public string ChildsName { get; set; }
         public int ChildsAge { get; set; }
         public string HairCutStyle { get; set; }
+        public string PhoneNumber { get; set; }    
 
 
     }

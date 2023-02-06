@@ -24,13 +24,38 @@ public class CustomerRepository : ICustomerRepository
             new { Id = id });
         return results.FirstOrDefault();
     }
-    public Task InsertCustomer(CustomerModel customer) =>
-        _db.SaveData(storedProcedure: "dbo.spCustomer_Insert", new { customer.FirstName, customer.LastName,
-            customer.ChildsName, customer.ChildsAge, customer.HairCutStyle});
+    public Task InsertCustomer(CustomerModel customer)
+    {
+        var formattedNum = FormattedPhoneNumber(customer.PhoneNumber);
+        return _db.SaveData(storedProcedure: "dbo.spCustomer_Insert", new
+        {
+            customer.FirstName,
+            customer.LastName,
+            customer.ChildsName,
+            customer.ChildsAge,
+            customer.HairCutStyle,
+            PhoneNumber = formattedNum
+        });
+    }
+
+
 
     public Task UpdateCustomer(CustomerModel customer) =>
         _db.SaveData(storedProcedure: "dbo.spCustomer_Update", customer);
 
     public Task DeleteCustomer(int id) =>
         _db.SaveData(storedProcedure: "dbo.spCustomer_Delete", new { Id = id });
+
+    public string FormattedPhoneNumber(string phoneNumber)
+    {
+        if (string.IsNullOrEmpty(phoneNumber))
+        {
+            return string.Empty;
+        }
+        if (phoneNumber.Length == 10)
+        {
+            return string.Format("{0:(000)-000-0000}", long.Parse(phoneNumber));
+        }
+        else return phoneNumber;
+    }
 }

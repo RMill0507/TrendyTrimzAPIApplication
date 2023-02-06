@@ -3,9 +3,10 @@
 	@LastName nvarchar(50),
 	@ChildsName nvarchar(50),
 	@ChildsAge int,
-	@HairCutStyle nvarchar(max)
+	@HairCutStyle nvarchar(max),
+	@PhoneNumber nvarchar(50)
  AS 
  begin 
-	insert into dbo.[Customer] (FirstName, LastName, ChildsName, ChildsAge, HairCutStyle)
-	values (@FirstName, @LastName, @ChildsName, @ChildsAge, @HairCutStyle);
+	insert into dbo.[Customer] (FirstName, LastName, ChildsName, ChildsAge, HairCutStyle, PhoneNumber)
+	values (@FirstName, @LastName, @ChildsName, @ChildsAge, @HairCutStyle, @PhoneNumber);
 end

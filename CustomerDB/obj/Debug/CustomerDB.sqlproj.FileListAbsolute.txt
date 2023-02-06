@@ -4,3 +4,7 @@ C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\bin\D
 C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\obj\Debug\CustomerDB.sqlproj.AssemblyReference.cache
 C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\obj\Debug\CustomerDB.dll
 C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\obj\Debug\CustomerDB.pdb
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\obj\Debug\Model.xml
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\obj\Debug\refactor.xml
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\obj\Debug\postdeploy.sql
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\CustomerDB\obj\Debug\predeploy.sql

@@ -8,4 +8,6 @@ public interface ICustomerRepository
     Task<CustomerModel> GetCustomer(int id);
     Task InsertCustomer(CustomerModel customer);
     Task UpdateCustomer(CustomerModel customer);
+
+
 }

@@ -63,15 +63,15 @@
   <ItemGroup>
     <Build Include="dbo\Tables\Customer.sql" />
     <Build Include="dbo\StoredProcedures\spCustomer_GetAll.sql" />
-    <Build Include="dbo\StoredProcedures\Procedure1spCustomer_Get.sql" />
+    <Build Include="dbo\StoredProcedures\spCustomer_Get.sql" />
     <Build Include="dbo\StoredProcedures\spCustomer_Insert.sql" />
     <Build Include="dbo\StoredProcedures\spCustomer_Update.sql" />
     <Build Include="dbo\StoredProcedures\spCustomer_Delete.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment.sql" />
+    <None Include="CustomerDB.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CustomerDB.publish.xml" />
+    <PostDeploy Include="Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>

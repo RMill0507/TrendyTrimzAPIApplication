@@ -13,11 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

@@ -41,3 +41,4 @@ C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\TrendyTrimzAPI\o
 C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\TrendyTrimzAPI\obj\Debug\net6.0\TrendyTrimzAPI.pdb
 C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\TrendyTrimzAPI\obj\Debug\net6.0\TrendyTrimzAPI.genruntimeconfig.cache
 C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\TrendyTrimzAPI\obj\Debug\net6.0\ref\TrendyTrimzAPI.dll
+C:\Users\rmill\OneDrive\Desktop\repos\TrendyTrimzAPIApplication\TrendyTrimzAPI\bin\Debug\net6.0\TrendyTrimzAPI.staticwebassets.runtime.json

@@ -13,6 +13,8 @@ builder.Services.AddSingleton<ICustomerRepository, CustomerRepository>();
 
 var app = builder.Build();
 
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

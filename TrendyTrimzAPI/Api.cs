@@ -45,9 +45,9 @@ public static class Api
         }
         catch (Exception ex)
         {
-            return Results.Problem(ex.Message);
+           return Results.Problem(ex.Message);
         }
-
+       
     }
     private static async Task<IResult> UpdateCustomer(CustomerModel customer, ICustomerRepository data)
     {
