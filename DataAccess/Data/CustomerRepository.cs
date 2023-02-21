@@ -1,6 +1,6 @@
 ﻿using DataAccess.DbAccess;
+using DataAccess.Extensions;
 using DataAccess.Models;
-
 
 
 namespace DataAccess.Data;
@@ -26,7 +26,7 @@ public class CustomerRepository : ICustomerRepository
     }
     public Task InsertCustomer(CustomerModel customer)
     {
-        var formattedNum = FormattedPhoneNumber(customer.PhoneNumber);
+        var formattedNum = customer.PhoneNumber.FormattedPhoneNumber();
         return _db.SaveData(storedProcedure: "dbo.spCustomer_Insert", new
         {
             customer.FirstName,
@@ -46,16 +46,16 @@ public class CustomerRepository : ICustomerRepository
     public Task DeleteCustomer(int id) =>
         _db.SaveData(storedProcedure: "dbo.spCustomer_Delete", new { Id = id });
 
-    public string FormattedPhoneNumber(string phoneNumber)
-    {
-        if (string.IsNullOrEmpty(phoneNumber))
-        {
-            return string.Empty;
-        }
-        if (phoneNumber.Length == 10)
-        {
-            return string.Format("{0:(000)-000-0000}", long.Parse(phoneNumber));
-        }
-        else return phoneNumber;
-    }
+    //public string FormattedPhoneNumber(string phoneNumber)
+    //{
+    //    if (string.IsNullOrEmpty(phoneNumber))
+    //    {
+    //        return string.Empty;
+    //    }
+    //    if (phoneNumber.Length == 10)
+    //    {
+    //        return string.Format("{0:(000)-000-0000}", long.Parse(phoneNumber));
+    //    }
+    //    else return phoneNumber;
+    //}
 }

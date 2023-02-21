@@ -3,7 +3,8 @@
 public static class Api
 
 {
-    public static void ConfigureApi(this WebApplication app)
+	// Define a public static extension method for WebApplication named ConfigureApi, with a single parameter of type WebApplication named app
+	public static void ConfigureApi(this WebApplication app)
     {
         app.MapGet(pattern: "/Customers", GetCustomers);
         app.MapGet(pattern: "/Customers/{id}", GetCustomer);

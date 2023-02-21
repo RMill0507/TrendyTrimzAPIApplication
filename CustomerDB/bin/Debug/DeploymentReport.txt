@@ -9,12 +9,5 @@
        None
 
 ** User actions
-     Create
-       [dbo].[Customer] (Table)
-       [dbo].[spCustomer_Delete] (Procedure)
-       [dbo].[spCustomer_Get] (Procedure)
-       [dbo].[spCustomer_GetAll] (Procedure)
-       [dbo].[spCustomer_Insert] (Procedure)
-       [dbo].[spCustomer_Update] (Procedure)
 
 ** Supporting actions
